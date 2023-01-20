@@ -31,7 +31,7 @@ export default NextAuth({
             }
         })
     ],
-    secret: "U0FLRE1kYWRtYWRhREtMQUtuS0ZsYW5mZHNLTVNGU0tOZlNLbVNLRlNLRlM6a21TTUtTRGRmLQ==",
+    secret: process.env.JWT_SECRET,
     session: {
         strategy: 'jwt',
     }
